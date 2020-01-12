@@ -1,4 +1,4 @@
-from app import db, ma
+from app import db
 
 
 class Genre(db.Model):
@@ -11,7 +11,3 @@ class Genre(db.Model):
     def __repr__(self) -> str:
         return '<Genre {}>'.format(self.genre)
 
-
-class GenreSchema(ma.ModelSchema):
-    class Meta:
-       model = Genre
