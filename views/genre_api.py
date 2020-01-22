@@ -1,6 +1,6 @@
 from flask.views import MethodView
 from app import db
-from models.genre import Genre
+from models import Genre
 from flask import Response
 from schemas.genre_schema import GenreSchema
 from flask import request, abort
