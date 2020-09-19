@@ -9,6 +9,8 @@ class Config(object):
 
 class Development(Config):
     DEBUG = True
+    SQLALCHEMY_ECHO = True
+    TESTING = True
 
 
 app_config = {

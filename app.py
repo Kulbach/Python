@@ -14,7 +14,4 @@ def create_app():
     ma.init_app(app)
     app.config.from_object(app_config[os.getenv('FLASK_ENV')])
 
-    #with app.app_context():
-        #db.create_all()
-
     return app
